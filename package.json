@@ -14,9 +14,9 @@
   },
   "repository": "",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": "5.10.1"
   },
-  "author": "",
+  "author": "timorecke@gmail.com",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",

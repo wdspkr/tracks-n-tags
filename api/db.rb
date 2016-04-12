@@ -1,4 +1,4 @@
 require 'sequel'
 require 'pg'
 
-DB = Sequel.postgres('tracksntags')
+DB = Sequel.connect(ENV['DATABASE_URL'] || 'postgres://localhost/tracksntags')
