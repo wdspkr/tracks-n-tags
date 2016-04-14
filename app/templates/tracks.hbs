@@ -2,7 +2,9 @@
 <ul class="list-group">
   {{#each model as |track|}}
     <li class="list-group-item">
-      <a href="{{track.url}}">{{track.url}}</a>
+      {{show-track track_url=track.url}}
     </li>
   {{/each}}
 </ul>
+
+{{new-track createTrack=(action 'createTrack')}}

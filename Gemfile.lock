@@ -35,6 +35,8 @@ GEM
       rack (>= 1.3.0)
       rack-accept
       virtus (>= 1.0.0)
+    grape_logging (1.2.1)
+      grape
     guard (2.13.0)
       formatador (>= 0.2.4)
       listen (>= 2.7, <= 4.0)
@@ -57,6 +59,8 @@ GEM
     json (1.8.3)
     jsonapi-serializers (0.8.0)
       activesupport
+    jsonapi_parser (0.4.0)
+      json (~> 1.8)
     listen (3.0.6)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9.7)
@@ -113,8 +117,10 @@ PLATFORMS
 
 DEPENDENCIES
   grape
+  grape_logging
   guard-livereload
   jsonapi-serializers
+  jsonapi_parser
   pg
   pry-nav
   rack-livereload
