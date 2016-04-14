@@ -9,5 +9,9 @@ gem 'sequel'
 gem 'jsonapi-serializers'
 gem 'pg'
 
-gem 'pry-nav'
-gem 'shotgun'
+group :development do
+  gem 'pry-nav'
+  gem 'shotgun'
+  gem 'rack-livereload'
+  gem 'guard-livereload', require: false
+end

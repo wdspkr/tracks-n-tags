@@ -22,8 +22,10 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* `ember build --watch`
+* `guard`
+* `rackup` or `shotgun`
+* Visit your app at [http://localhost:9292](http://localhost:9292) ([9393](http://localhost:9393) with shotgun).
 
 ### Code Generators
 
