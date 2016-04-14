@@ -1,5 +1,8 @@
-{{#each model as |track|}}
-  <p>
-    {{track.url}}
-  </p>
-{{/each}}
+<h2>List tracks</h2>
+<ul class="list-group">
+  {{#each model as |track|}}
+    <li class="list-group-item">
+      <a href="{{track.url}}">{{track.url}}</a>
+    </li>
+  {{/each}}
+</ul>
