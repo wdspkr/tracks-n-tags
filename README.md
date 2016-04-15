@@ -57,5 +57,11 @@ Specify what it takes to deploy your app.
 ## Migration
 
 ```
-sequel -m api/db/migrations postgres://localhost/tracksntags
+bundle exec rake db:migrate
+```
+
+Test DB:
+
+```
+bundle exec rake db:migrate APP_ENV=test
 ```

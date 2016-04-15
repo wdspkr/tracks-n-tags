@@ -1,10 +1,13 @@
-require './frontend_serve'
-require './api/api'
+require './load_environment'
 
-unless ENV['RACK_ENV'] == 'production'
+if APP_ENV == 'development'
+  require 'pry'
+
   require 'rack-livereload'
-
   use Rack::LiveReload
 end
+
+require './frontend_serve'
+require './api/api'
 
 run Rack::Cascade.new [API::Base, FrontendServe]

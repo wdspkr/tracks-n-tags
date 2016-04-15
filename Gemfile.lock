@@ -17,6 +17,8 @@ GEM
       descendants_tracker (~> 0.0.1)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
+    diff-lcs (1.2.5)
+    dotenv (2.1.1)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -89,10 +91,25 @@ GEM
       rack
     rack-protection (1.5.3)
       rack
+    rack-test (0.6.3)
+      rack (>= 1.0)
     rake (11.1.2)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+    rspec-core (3.4.4)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-mocks (3.4.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-support (3.4.1)
     sequel (4.33.0)
     shellany (0.0.1)
     shotgun (0.9.1)
@@ -117,6 +134,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv
   grape
   grape_logging
   guard-livereload
@@ -125,7 +143,9 @@ DEPENDENCIES
   pg
   pry-nav
   rack-livereload
+  rack-test
   rake
+  rspec
   sequel
   shotgun
   sinatra

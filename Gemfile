@@ -2,6 +2,8 @@ ruby '2.2.3'
 
 source 'https://rubygems.org'
 
+gem 'dotenv', :groups => [:development, :test]
+
 gem 'sinatra'
 
 gem 'rake'
@@ -17,4 +19,9 @@ group :development do
   gem 'shotgun'
   gem 'rack-livereload'
   gem 'guard-livereload', require: false
+end
+
+group :development, :test do
+  gem 'rspec'
+  gem 'rack-test'
 end
