@@ -7,4 +7,4 @@ unless ENV['RACK_ENV'] == 'production'
   use Rack::LiveReload
 end
 
-run Rack::Cascade.new [API, FrontendServe]
+run Rack::Cascade.new [API::Base, FrontendServe]
