@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 
 gem 'sinatra'
 
+gem 'rake'
 gem 'grape'
 gem 'grape_logging'
 gem 'sequel'
