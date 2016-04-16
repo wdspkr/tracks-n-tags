@@ -5,6 +5,8 @@ require 'rspec/core'
 require 'rack/test'
 require 'factory_girl'
 require 'rspec/json_expectations'
+require 'pry'
+
 require_relative '../api'
 
 RSpec.configure do |config|
