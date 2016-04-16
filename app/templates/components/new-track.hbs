@@ -1,4 +1,7 @@
+<form {{action "createTrack" on="submit"}}>
 <div class="form-group">
   <label>New track</label>
-  {{input value=url class="form-control" enter=(action 'createTrack')}}
+  {{input value=url class="form-control url" type="url"}}
 </div>
+<button class="btn btn-primary" type="submit">Save</button>
+</form>
