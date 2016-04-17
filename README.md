@@ -22,10 +22,23 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-* `ember build --watch`
-* `guard`
-* `rackup` or `shotgun`
-* Visit your app at [http://localhost:9292](http://localhost:9292) ([9393](http://localhost:9393) with shotgun).
+### Running against mirage api mock
+
+* `ember server`
+
+### Running against the api
+
+* `rackup`
+* `ember server --proxy http://localhost:9292`
+
+or
+
+* `shotgun`
+* `ember server --proxy http://localhost:9393`
+
+### …then
+
+Visit your app at [http://localhost:4200](http://localhost:4200) .
 
 ### Code Generators
 

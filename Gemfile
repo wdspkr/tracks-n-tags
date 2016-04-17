@@ -17,8 +17,6 @@ gem 'pg'
 group :development do
   gem 'pry-nav'
   gem 'shotgun'
-  gem 'rack-livereload'
-  gem 'guard-livereload', require: false
 end
 
 group :development, :test do
